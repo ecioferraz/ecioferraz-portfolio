@@ -19,6 +19,7 @@ export const Container = styled.div`
 
   span {
     font-size: 12px;
+    font-weight: 500;
     opacity: 0;
     text-align: center;
     transform: translateY(16px);
