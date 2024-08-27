@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
-import { type StaticImageData } from 'next/image'
 import styled from 'styled-components'
 
-export const ContainerBg = styled.div<{ $bgImg: StaticImageData }>`
-  background-image: url(${({ $bgImg }) => $bgImg.src});
+export const ContainerBg = styled.div<{ $bgImg: string }>`
+  background-image: url(${({ $bgImg }) => $bgImg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +60,7 @@ export const LinksContainer = styled.div`
   }
 `
 
-export const Container = styled.a`
+export const Container = styled.div`
   border-radius: 20px;
   box-shadow: 4px 4px 6px 4px #00000025;
   height: 178px;

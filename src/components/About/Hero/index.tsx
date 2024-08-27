@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { type ReactElement, useCallback, useState } from 'react'
-import hero from '../assets/hero.png'
 import { EMAIL, ICONS, INITIAL_STATE } from './contants'
 import * as S from './styled'
 
@@ -43,7 +42,7 @@ export default function Hero (): ReactElement {
 
   return <S.Container>
     <figure>
-      <Image src={hero} alt="" />
+      <Image src="/assets/hero/hero.png" alt="" height={384} layout="intrinsic" width={384} priority />
     </figure>
 
     <S.InfoContainer>

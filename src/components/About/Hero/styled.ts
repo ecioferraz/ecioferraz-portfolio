@@ -7,13 +7,16 @@ export const Container = styled.div`
   justify-content: center;
   gap: 16px;
 
-  figure img {
-    border-radius: 50%;
-    box-shadow: 4px 4px 6px 4px #00000025;
-    height: auto;
+  figure {
     max-width: 384px;
-    vertical-align: top;
     width: 100%;
+
+    img {
+      border-radius: 50%;
+      box-shadow: 4px 4px 6px 4px #00000025;
+      height: auto;
+      vertical-align: top;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -21,7 +24,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 764px) {
-    figure img {
+    figure {
       max-width: 284px;
     }
   }

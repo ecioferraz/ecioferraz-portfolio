@@ -3,9 +3,18 @@
     "browser": true,
     "es2021": true
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "extends": [
     "standard-with-typescript",
-    "plugin:react/recommended"
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next",
+    "next/core-web-vitals"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -14,9 +23,7 @@
       "tsconfig.json"
     ]
   },
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "quotes": [
       "error",
@@ -32,6 +39,7 @@
     "@typescript-eslint/semi": [
       "error"
     ],
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "eslint-plugin-import/no-anonymous-default-export": "off"
   }
 }

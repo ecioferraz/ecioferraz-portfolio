@@ -13,7 +13,7 @@ export default function Page (): ReactElement {
   const { query: { slug } } = useRouter()
 
   return pages[slug as string]
-};
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = Object.keys(pages).map((key) => ({ params: { slug: key } }))

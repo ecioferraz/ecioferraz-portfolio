@@ -1,7 +1,5 @@
-import { type StaticImageData } from 'next/image'
-
 export default interface ProjectCardProps {
-  bgImg: StaticImageData
+  bgImg: string
   gitHubURL: string
   projectURL?: string
   title: string

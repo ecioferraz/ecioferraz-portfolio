@@ -1,7 +1,7 @@
 import ProjectCard from '@/components/ProjectCard'
+import projects from '@/data/Projects/projects'
+import * as S from '@/styles/Projects/styled'
 import { type ReactElement } from 'react'
-import projects from './projects'
-import * as S from './styled'
 
 export default function Projects (): ReactElement {
   return <S.Container>
