@@ -12,9 +12,21 @@
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
+    "@styled-icons/bootstrap": "^10.47.0",
+    "@styled-icons/boxicons-logos": "^10.47.0",
+    "@styled-icons/boxicons-regular": "^10.47.0",
+    "@styled-icons/fa-regular": "^10.47.0",
+    "@styled-icons/fa-solid": "^10.47.0",
+    "@styled-icons/feather": "^10.47.0",
+    "@styled-icons/fluentui-system-regular": "^10.47.0",
+    "@styled-icons/simple-icons": "^10.46.0",
     "@types/node": "^18.18.3",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
+    "eslint": "^8.57.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-react": "^7.35.0",
     "typescript": "^5.2.2"
   }
 }
