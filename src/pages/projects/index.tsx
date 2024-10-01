@@ -7,7 +7,7 @@ export default function Projects (): ReactElement {
   return <S.Container>
     <h1>Projetos</h1>
 
-    <S.ProjectsContainer>
+    <S.ProjectsContainer $childrenLength={projects.length}>
       {projects.map((project) => <ProjectCard {...project} key={project.title} />)}
     </S.ProjectsContainer>
   </S.Container>

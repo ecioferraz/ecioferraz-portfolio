@@ -1,6 +1,23 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translate(50%, 0);
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+`
 
 export const Container = styled.div`
+  animation: ${fadeIn} 1s linear;
   display: flex;
   flex-direction: column;
   gap: 16px;
